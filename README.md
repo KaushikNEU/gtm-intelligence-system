@@ -13,15 +13,7 @@
 
 ## 🎬 Demo Walkthrough
 
-<!-- ============================================================
-     REPLACE THIS SECTION:
-     1. Record a 90-second Loom at loom.com (free)
-     2. Walk through: seed data → process contact → view scoring → observability
-     3. Copy the Loom share link and paste it below
-     4. Replace the thumbnail URL with your actual Loom thumbnail
-     ============================================================ -->
-
-[![GTM Intelligence System Demo](https://cdn.loom.com/sessions/thumbnails/YOUR_LOOM_ID-with-play.gif)](https://www.loom.com/share/YOUR_LOOM_LINK_HERE)
+https://www.veed.io/view/3f8e8414-9d79-45e2-bc1c-97877b7d6339?source=editor&panel=share
 
 > **What the video covers:**
 > - Seeding demo contacts and running the full AI pipeline
