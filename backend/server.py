@@ -1083,15 +1083,18 @@ async def get_scoring_analytics(user: User = Depends(get_current_user)):
         {"_id": 0, "contact_id": 1, "email": 1, "score": 1, "tier": 1, "score_reasoning": 1, "scored_at": 1}
     ).sort("scored_at", -1).limit(20).to_list(20)
     
-    # Tier breakdown over time (last 7 days) - simplified
+    # Tier breakdown over time (last 7 days) - optimized single query
+    tier_counts = {
+        "A": await db.contacts.count_documents({"user_id": user.user_id, "tier": "A"}),
+        "B": await db.contacts.count_documents({"user_id": user.user_id, "tier": "B"}),
+        "C": await db.contacts.count_documents({"user_id": user.user_id, "tier": "C"})
+    }
     tier_trend = []
     for i in range(7):
         date = (datetime.now(timezone.utc) - timedelta(days=i)).strftime("%Y-%m-%d")
         tier_trend.append({
             "date": date,
-            "A": await db.contacts.count_documents({"user_id": user.user_id, "tier": "A"}),
-            "B": await db.contacts.count_documents({"user_id": user.user_id, "tier": "B"}),
-            "C": await db.contacts.count_documents({"user_id": user.user_id, "tier": "C"})
+            **tier_counts
         })
     
     return {
@@ -1252,10 +1255,17 @@ async def bulk_process_contacts(request: Request, user: User = Depends(get_curre
         ).limit(50).to_list(50)
         contact_ids = [c["contact_id"] for c in pending]
     
+    # Batch fetch all contacts at once (avoid N+1 queries)
+    contacts_batch = await db.contacts.find(
+        {"contact_id": {"$in": contact_ids[:50]}, "user_id": user.user_id},
+        {"_id": 0}
+    ).to_list(50)
+    contacts_map = {c["contact_id"]: c for c in contacts_batch}
+    
     results = []
     for contact_id in contact_ids[:50]:  # Limit to 50
         try:
-            contact = await db.contacts.find_one({"contact_id": contact_id, "user_id": user.user_id}, {"_id": 0})
+            contact = contacts_map.get(contact_id)
             if not contact:
                 results.append({"contact_id": contact_id, "status": "not_found"})
                 continue
