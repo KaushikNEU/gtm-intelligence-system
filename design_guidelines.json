@@ -1,0 +1,143 @@
+{
+  "project_identity": {
+    "name": "GTM Intelligence Platform",
+    "persona": "E1 - The Anti-AI Designer",
+    "aesthetic": "Linear/Vercel Dark Mode",
+    "core_philosophy": "Data density, precision, and functional beauty. No gradients, no fluff. Content is King."
+  },
+  "typography": {
+    "primary_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap",
+    "rules": {
+      "headings": "font-sans font-semibold tracking-tight text-white",
+      "body": "font-sans text-zinc-400 font-normal",
+      "data_tables": "font-mono text-sm tracking-tight",
+      "numbers": "font-mono tabular-nums",
+      "labels": "text-xs font-medium uppercase tracking-wider text-zinc-500"
+    }
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": {
+        "default": "#09090b",
+        "paper": "#09090b",
+        "subtle": "#18181b"
+      },
+      "foreground": {
+        "default": "#fafafa",
+        "muted": "#a1a1aa",
+        "dim": "#52525b"
+      },
+      "border": {
+        "default": "#27272a",
+        "subtle": "#18181b",
+        "active": "#3f3f46"
+      },
+      "tiers": {
+        "A": "#22c55e",
+        "B": "#eab308",
+        "C": "#ef4444"
+      },
+      "accents": {
+        "brand": "#fafafa",
+        "success": "#22c55e",
+        "warning": "#eab308",
+        "error": "#ef4444",
+        "info": "#3b82f6",
+        "ai_glow": "#6366f1"
+      }
+    },
+    "utility_classes": {
+      "bg_app": "bg-[#09090b]",
+      "bg_card": "bg-[#09090b]",
+      "text_primary": "text-zinc-50",
+      "text_secondary": "text-zinc-400",
+      "border_default": "border-zinc-800",
+      "tier_a_badge": "bg-green-500/10 text-green-500 border-green-500/20",
+      "tier_b_badge": "bg-yellow-500/10 text-yellow-500 border-yellow-500/20",
+      "tier_c_badge": "bg-red-500/10 text-red-500 border-red-500/20"
+    }
+  },
+  "layout": {
+    "spacing_system": "Use loose spacing for containers (p-6, p-8) but tight spacing for data tables (py-2, gap-2).",
+    "grid_strategy": "Bento Grid (Mode A) for Dashboards, Dense Grid (Mode B) for Analytics.",
+    "container_styles": {
+      "card": "border border-zinc-800 bg-[#09090b] rounded-md overflow-hidden",
+      "dashboard_grid": "grid grid-cols-1 md:grid-cols-12 gap-4",
+      "sidebar": "w-64 border-r border-zinc-800 h-screen bg-[#09090b] fixed left-0 top-0 z-50",
+      "main_content": "ml-64 p-8 min-h-screen bg-[#09090b]"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-zinc-200 h-9 px-4 rounded-md font-medium text-sm transition-colors",
+      "secondary": "bg-transparent border border-zinc-800 text-zinc-300 hover:bg-zinc-900 h-9 px-4 rounded-md font-medium text-sm transition-colors",
+      "ghost": "bg-transparent text-zinc-400 hover:text-white hover:bg-zinc-900 h-9 px-4 rounded-md font-medium text-sm transition-colors",
+      "destructive": "bg-red-900/20 text-red-500 hover:bg-red-900/30 border border-red-900/50 h-9 px-4 rounded-md font-medium text-sm transition-colors"
+    },
+    "inputs": {
+      "default": "bg-transparent border border-zinc-800 text-white placeholder:text-zinc-600 focus:border-zinc-500 focus:ring-0 rounded-md h-9 px-3 text-sm font-sans",
+      "search": "bg-zinc-900/50 border border-zinc-800 pl-9"
+    },
+    "tables": {
+      "wrapper": "border border-zinc-800 rounded-md overflow-hidden",
+      "header": "bg-zinc-900/50 border-b border-zinc-800 text-xs font-medium uppercase text-zinc-500 h-10 px-4 text-left",
+      "row": "border-b border-zinc-800/50 hover:bg-zinc-900/30 transition-colors h-12",
+      "cell": "px-4 text-sm text-zinc-300 font-mono"
+    },
+    "badges": {
+      "base": "inline-flex items-center rounded-sm px-2 py-0.5 text-xs font-medium ring-1 ring-inset",
+      "outline": "text-zinc-400 ring-zinc-800",
+      "solid": "bg-white text-black ring-white"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-md bg-black/50 border-b border-white/5",
+    "glow_effects": "shadow-[0_0_30px_-10px_rgba(99,102,241,0.3)]",
+    "borders": "border border-zinc-800",
+    "noise_overlay": "opacity-[0.03] pointer-events-none fixed inset-0 z-[9999] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"
+  },
+  "motion": {
+    "default_transition": "transition-all duration-200 ease-in-out",
+    "hover_lift": "hover:-translate-y-0.5 transition-transform duration-200",
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 10 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -10 }
+    }
+  },
+  "media": {
+    "image_urls": {
+      "auth_background": "https://images.unsplash.com/photo-1709334197341-122c6fd5ae1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMGRhcmslMjBsaW5lYXIlMjB0ZWNobm9sb2d5JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzI5ODg3MzN8MA&ixlib=rb-4.1.0&q=85",
+      "contact_avatar_1": "https://images.pexels.com/photos/30004324/pexels-photo-30004324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "contact_avatar_2": "https://images.unsplash.com/photo-1762522926157-bcc04bf0b10a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3Mjk4ODczMnww&ixlib=rb-4.1.0&q=85",
+      "empty_state_abstract": "https://images.unsplash.com/photo-1517241034903-9a4c3ab12f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMGRhcmslMjBsaW5lYXIlMjB0ZWNobm9sb2d5JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzI5ODg3MzN8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "libraries": {
+    "charts": "Recharts (customized to look flat and minimal)",
+    "icons": "Lucide React",
+    "tables": "TanStack Table (headless) + Custom UI",
+    "forms": "React Hook Form + Zod",
+    "toast": "Sonner (Dark mode default)"
+  },
+  "instructions_to_main_agent": [
+    "1. THEME ENFORCEMENT: Force dark mode by adding 'dark' class to html/body tag in index.html and ensuring all Tailwind classes assume dark mode (e.g., bg-background is black).",
+    "2. FONT SETUP: Import Inter and JetBrains Mono in index.css. Apply 'font-sans' to body and 'font-mono' to all data tables and metrics.",
+    "3. COMPONENT STYLE: Override default Shadcn rounded-lg with rounded-md or rounded-sm for a sharper 'Linear' look.",
+    "4. LAYOUT: Implement the Sidebar Layout as the primary wrapper for all authenticated pages.",
+    "5. DATA DENSITY: Use compact padding for tables. Do not use 'comfortable' spacing for data-heavy views.",
+    "6. TIER COLORS: Strict adherence to Green (A), Yellow (B), Red (C) for badges and indicators.",
+    "7. TEST IDS: Add data-testid to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "Create depth through layered design elements (z-index) but keep it subtle.",
+    "Avoid gradients for backgrounds; use them only for tiny accents or 'glow' effects.",
+    "Use 1px borders with low opacity (white/10) to define areas instead of shadows.",
+    "Micro-interactions: Buttons should have a distinct hover and active state.",
+    "Never use 'System Fonts' if possible; load Inter to ensure consistency.",
+    "For empty states, use the 'empty_state_abstract' image with a grayscale filter."
+  ]
+}
