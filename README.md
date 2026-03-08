@@ -274,6 +274,6 @@ The architecture mirrors production patterns applied at:
 MS Information Systems, Northeastern University (Aug 2026)
 GTM AI Engineer Intern @ Dox Health Inc, Boston
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat-square)](https://YOUR_PORTFOLIO_URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square)](https://www.linkedin.com/in/kaushik-jayaprakash/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat-square)](https://kaushikjayaprakash.lovable.app/)
 [![Email](https://img.shields.io/badge/Email-lnu.kau%40northeastern.edu-red?style=flat-square)](mailto:lnu.kau@northeastern.edu)
