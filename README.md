@@ -48,7 +48,7 @@ Sign in with Google → click **Seed Demo Data** on the Dashboard → navigate t
        Replace YOUR_YOUTUBE_LINK with your VEED share link
      ============================================================ -->
 
-[![GTM Intelligence System — Architecture Explainer](https://img.shields.io/badge/▶%20Watch%20Architecture%20Explainer-NotebookLM-purple?style=for-the-badge)](YOUR_YOUTUBE_LINK)
+[![GTM Intelligence System — Architecture Explainer](https://img.shields.io/badge/▶%20Watch%20Architecture%20Explainer-NotebookLM-purple?style=for-the-badge)](https://youtu.be/UiM-1tcnmSU)
 
 > **What this covers:**
 > - A two-host conversational breakdown of the full pipeline
