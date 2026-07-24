@@ -15,7 +15,7 @@
 
 ## 🔗 Live Demo
 
-**[https://activate-tier-ai.emergent.host](https://activate-tier-ai.preview.emergentagent.com/)**
+**[https://activate-tier-ai.preview.emergentagent.com/](https://activate-tier-ai.preview.emergentagent.com/)**
 
 Sign in with Google → click **Seed Demo Data** on the Dashboard → navigate to Lead Intelligence → click **Process All Pending** to see the full AI pipeline in action.
 
